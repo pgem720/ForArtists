@@ -1,0 +1,4 @@
+{
+	"mongoURI": "mongodb+srv://pia123:pia123@forartists-7ktkx.mongodb.net/test?retryWrites=true&w=majority",
+	"jwtSecret": "mysecrettoken"
+}
