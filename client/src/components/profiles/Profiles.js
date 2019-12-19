@@ -28,8 +28,8 @@ const Profiles = ({ profile: { profiles, loading }, getProfiles }) => {
 };
 
 Profiles.propTypes = {
-	profile: PropTypes.object.isRequired,
-	getProfiles: PropTypes.func.isRequired
+	getProfiles: PropTypes.func.isRequired,
+	profile: PropTypes.object.isRequired
 };
 
 const mapStateToProps = state => ({
