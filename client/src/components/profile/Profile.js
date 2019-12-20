@@ -7,7 +7,7 @@ import ProfileTop from './ProfileTop';
 import ProfileAbout from './ProfileAbout';
 import ProfileExperience from './ProfileExperience';
 import ProfileEducation from './ProfileEducation';
-import ProfileImage from './ProfileImage';
+// import ProfileImage from './ProfileImage';
 import Spinner from '../layout/Spinner';
 
 const Profile = ({
@@ -71,7 +71,7 @@ const Profile = ({
 					</div>
 				</Fragment>
 			)}
-			<ProfileImage />
+			{/* <ProfileImage /> */}
 		</Fragment>
 	);
 };
