@@ -7,18 +7,23 @@
 		"start": "node server",
 		"server": "nodemon server",
 		"client": "npm start --prefix client",
-		"dev": "concurrently \"npm run server\" \"npm run client\""
+		"dev": "concurrently \"npm run server\" \"npm run client\"",
+		"heroku-postbuild": "NPM_CONFIG-PRODUCTION=false npm install --prefix client && npm run bild --prefix client"
 	},
 	"author": "\"Pia Coronel\"",
 	"license": "ISC",
 	"dependencies": {
 		"bcryptjs": "^2.4.3",
+		"body-parser": "^1.19.0",
 		"config": "^3.2.4",
 		"express": "^4.17.1",
 		"express-validator": "^6.3.0",
 		"gravatar": "^1.8.0",
+		"gridfs-stream": "^1.1.1",
 		"jsonwebtoken": "^8.5.1",
 		"mongoose": "^5.8.1",
+		"multer": "^1.4.2",
+		"multer-gridfs-storage": "^4.0.1",
 		"request": "^2.88.0"
 	},
 	"devDependencies": {
