@@ -11,7 +11,7 @@ const DashboardActions = props => {
 				<i className='fas fa-graduation-cap text-primary'></i> Add Education
 			</Link>
 			<Link to='/add-experience' className='btn btn-light'>
-				<i className='fas fa-graduation-cap text-primary'></i> Add Experience
+				<i className='fas fa-graduation-cap text-primary'></i> Add Exhibition
 			</Link>
 		</div>
 	);

@@ -371,8 +371,7 @@ button {
 	grid-template-areas:
 		'top top'
 		'about about'
-		'exp edu'
-		'github github';
+		'exp edu';
 	grid-gap: 1rem;
 }
 
@@ -383,6 +382,9 @@ button {
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+	background: rgb(226, 241, 6);
+	color: rgb(6, 10, 247);
+	border: 1px solid #ccc;
 }
 
 .profile-top img {
@@ -390,7 +392,7 @@ button {
 }
 
 .profile-top .icons a {
-	color: #fff;
+	color: rgb(129, 124, 124);
 	margin: 0 0.3rem;
 }
 
@@ -401,6 +403,7 @@ button {
 .profile-about {
 	grid-area: about;
 	text-align: center;
+	background: white;
 }
 
 .profile-about .skills {
@@ -438,24 +441,6 @@ button {
 .profile-exp p,
 .profile-edu p {
 	margin: 0.5rem 0;
-}
-
-.profile-github {
-	grid-area: github;
-}
-
-.profile-github .repo {
-	display: flex;
-}
-
-.profile-github .repo > div:first-child {
-	flex: 7;
-	flex-basis: 70%;
-}
-
-.profile-github > div:last-child {
-	flex: 3;
-	flex-basis: 20%;
 }
 
 /* Posts Page */
@@ -558,8 +543,7 @@ button {
 			'top'
 			'about'
 			'exp'
-			'edu'
-			'github';
+			'edu';
 	}
 
 	.profile-about .skills {
