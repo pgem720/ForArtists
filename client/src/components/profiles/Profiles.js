@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { getProfiles } from '../../actions/profile';
 import ProfileItem from './ProfileItem';
-import SearchBar from '../layout/SearchBar';
+// import SearchBar from '../layout/SearchBar';
 
 const Profiles = ({ profile: { profiles, loading }, getProfiles }) => {
 	useEffect(() => {
@@ -15,7 +15,7 @@ const Profiles = ({ profile: { profiles, loading }, getProfiles }) => {
 			<p className='lead'>
 				<i className='fab fa-connectdevelop' /> Connect with artists
 			</p>
-			<SearchBar />
+			{/* <SearchBar /> */}
 			<div className='profiles'>
 				{profiles.length > 0 ? (
 					profiles.map(profile => (
