@@ -11,11 +11,11 @@ const Experience = ({ experience, deleteExperience }) => {
 			<td>{exp.space}</td>
 			<td className='hide-sm'>{exp.title}</td>
 			<td>
-				<Moment format='YYYY/MM/DD'>{moment.utc(exp.from)}</Moment> -{' '}
+				<Moment format='YYYY/MM'>{moment.utc(exp.from)}</Moment> -{' '}
 				{exp.to === null ? (
 					' Now'
 				) : (
-					<Moment format='YYYY/MM/DD'>{moment.utc(exp.to)}</Moment>
+					<Moment format='YYYY/MM'>{moment.utc(exp.to)}</Moment>
 				)}
 			</td>
 			<td>

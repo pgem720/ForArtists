@@ -7,7 +7,8 @@ import {
 	UPDATE_PROFILE,
 	CLEAR_PROFILE,
 	ACCOUNT_DELETED,
-	GET_PROFILES
+	GET_PROFILES,
+	SEARCH_PROFILE
 } from '../actions/types';
 
 export const getUserProfile = () => async dispatch => {
@@ -210,5 +211,21 @@ export const deleteAccount = id => async dispatch => {
 				}
 			});
 		}
+	}
+};
+
+//search profile
+export const searchProfile = text => async dispatch => {
+	try {
+		const res = await axios.get(`/api/profile?q=${text}`);
+		dispatch({
+			type: SEARCH_PROFILE,
+			payload: res.data
+		});
+	} catch (error) {
+		dispatch({
+			type: PROFILE_ERROR,
+			payload: { msg: error.response.statusText, status: error.response.status }
+		});
 	}
 };

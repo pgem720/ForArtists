@@ -7,13 +7,12 @@ const ProfileExperience = ({
 }) => {
 	return (
 		<div class='profile-exp bg-white p-2'>
-			<h2 class='text-primary'>EXHIBITIONS</h2>
 			<div>
 				<h3 class='text-dark'>{space}</h3>
 				<p>{location}</p>
 				<p>
-					<Moment format='YYYY/MM/DD'>{from}</Moment> -{' '}
-					{!to ? ' Now' : <Moment format='YYYY/MM/DD'>{to}</Moment>}
+					<Moment format='YYYY/MM'>{from}</Moment> -{' '}
+					{!to ? ' Now' : <Moment format='YYYY/MM'>{to}</Moment>}
 				</p>
 				<p>
 					<strong>Description: </strong>

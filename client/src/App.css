@@ -1,10 +1,10 @@
 /* Global Styles */
 :root {
-	--primary-color: #e67710;
-	--dark-color: #0c7e5c;
-	--light-color: #f4f4f4;
-	--danger-color: #dc3545;
-	--success-color: #28a745;
+	--primary-color: #d4afcd;
+	--dark-color: #b79fad;
+	--light-color: #798086;
+	--danger-color: #556f7a;
+	--success-color: #2e6171;
 }
 
 * {
@@ -334,7 +334,7 @@ button {
 /* Landing Page */
 .landing {
 	position: relative;
-	background: url('./img/artists.jpg') no-repeat center center/cover;
+	background: url('./img/artists.png') no-repeat center center/cover;
 	height: 100vh;
 }
 
