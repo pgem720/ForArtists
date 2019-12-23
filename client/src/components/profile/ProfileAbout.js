@@ -21,7 +21,7 @@ const ProfileAbout = ({
 			<div class='skills'>
 				{creativeskills.map((skill, idx) => (
 					<div key={idx} className='p-1'>
-						<i className='fas fa-check'>{skill}</i>
+						<i className='far fa-star'>{skill}</i>
 					</div>
 				))}
 			</div>

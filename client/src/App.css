@@ -17,7 +17,8 @@ body {
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 1rem;
 	line-height: 1.6;
-	background-color: #fff;
+	/* background-color: #fff; */
+	background: url('./img/pattern.png');
 	color: rgb(81, 73, 148);
 }
 
@@ -214,8 +215,11 @@ img {
 	border: #ccc solid 1px;
 }
 
-.round-img {
-	border-radius: 50%;
+.square-img {
+	/* border-radius: 50%; */
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
 }
 
 .line {
@@ -226,7 +230,7 @@ img {
 
 /* Overlay */
 .dark-overlay {
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color: rgba(0, 0, 0, 0.377);
 	position: absolute;
 	top: 0;
 	left: 0;

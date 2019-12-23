@@ -11,9 +11,11 @@ const Profiles = ({ profile: { profiles, loading }, getProfiles }) => {
 	}, [getProfiles]);
 	return (
 		<Fragment>
-			<h1 className='large text-primary'>Artists</h1>
-			<p className='lead'>
-				<i className='fab fa-connectdevelop' /> Connect with artists
+			{/* <h1 className='medium text-primary'>Artists</h1> */}
+			<p className='lead large text-primary'>
+				<strong>
+					<i className='fab fa-connectdevelop' /> C O N N E C T
+				</strong>
 			</p>
 			{/* <SearchBar /> */}
 			<div className='profiles'>
